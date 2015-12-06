@@ -1,0 +1,381 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Cheat Sheet</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/cheatsheet-stylesheet.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="/imgs/favicon.ico"/>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"><div><img src="/imgs/arrow-left-01.png" alt="BackButton"></div></a>
+      <h1>Ruby/ JavaScript Iterating Cheat Sheet</h1>
+    </header>
+    <main class = "columns">
+        <section class="column_1"> <!--Column 1-->
+
+          <div class="title"><p>Methods for Arrays</p></div>
+
+          <!--Transpose-->
+          <div class="card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <div class ="front_title">Multi-Dimensional Array Method</div>
+              </div>
+              <div class="back">
+                <div class = "content">
+                  <p class="method_name">#transpose</p>
+                  <p><!-- <span>Definition: </span> -->When called on an a 2D-array, <span class="inline_code">transpose</span> changes the columns to rows.</p>
+
+                    <code>a = [[1,2], [3,4], [5,6]]
+                    a.transpose<br>
+                    #=> [[1, 3, 5], [2, 4, 6]]
+                    </code>
+
+                  <p><span>Extra:</span> Access a column by selecting the value at each index you specify.</p>
+                  <code>each {|x| x.values_at(0)}</code>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Pop/Push Slice-->
+          <div class="card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <div class ="front_title"><p>Methods for +/- elements</p></div>
+              </div>
+              <div class="back">
+                <div class = "content">
+                  <p class="method_name">#pop</p>
+                  <p class="method_name">#push</p>
+                  <p class="method_name">#slice</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--each with index-->
+          <!-- <div class="card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front"><p>#each_with_index</p></div>
+              <div class="back"><div class = "content"><p>Loop using index</p></div></div>
+            </div>
+          </div> -->
+
+          <!--sort/reverse-->
+          <div class="card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <div class ="front_title"><p>Methods for sorting elements</p></div>
+              </div>
+              <div class="back">
+                <div class = "content">
+                  <p class="method_name">#sort</p>
+                  <p class="method_name">#reverse</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         <!--inject/reduce-->
+         <div class="card" ontouchstart="this.classList.toggle('hover');">
+           <div class="flipper">
+              <div class="front">
+                <div class ="front_title"><p>Accumulator/counter methods</p></div>
+              </div>
+              <div class="back">
+                <div class = "content">
+                  <p class="method_name">#inject</p>
+                  <p class="method_name">#reduce</p>
+                  <p><span>Description: </span>Shortcut methods to avoid creating a counting variable.</p>
+                </div>
+              </div>
+            </div>
+         </div>
+
+          <!--map-->
+          <div class="card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <div class ="front_title"><p>Change Each</p></div>
+              </div>
+              <div class="back">
+                <div class = "content">
+                  <p class="method_name">#map</p>
+                  <p><span>Definition: </span>Perform an action on each item, output new array that is the result of the code block.</p>
+                  <code>
+                    a = [ "Hello", "Bye" ]<br>
+                    a.map { |word| word + "!" }<br>
+                    #=> ["Hello!", "Bye!"]
+                  </code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="column_2"> <!--Column 2-->
+          <div class="title"><p>Methods for Hashes</p></div>
+
+          <!--each_key-->
+          <div class="card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <div class ="front_title"><p>Looping through Keys &amp; Values</p></div>
+              </div>
+              <div class="back">
+                <div class = "content">
+                  <p class="method_name">#each_key</p>
+                  <p class="method_name">#each_pair</p>
+                  <p class="method_name">#each_value</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--has_key?/has_value?-->
+          <div class="card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <div class ="front_title"><p>Key-Value Conditionals</p></div>
+              </div>
+              <div class="back">
+                <div class = "content">
+                  <p class="method_name">#has_key?</p>
+                  <p class="method_name">#has_value?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--filler-->
+          <div class="card"> <!-- ontouchstart="this.classList.toggle('hover');" -->
+            <!-- <div class="flipper"> -->
+              <div class="front"><div class ="front_title"><p></p></div></div>
+              <div class="back"><div class = "content"><p></p></div></div>
+            <!-- </div> -->
+          </div>
+
+          <!--filler-->
+          <div class="card"> <!-- ontouchstart="this.classList.toggle('hover');" -->
+            <!-- <div class="flipper"> -->
+              <div class="front"><div class ="front_title"><p></p></div></div>
+              <div class="back"><div class = "content"><p></p></div></div>
+            <!-- </div> -->
+          </div>
+
+          <!--filler-->
+          <div class="card"> <!-- ontouchstart="this.classList.toggle('hover');" -->
+            <!-- <div class="flipper"> -->
+              <div class="front"><div class ="front_title"><p></p></div></div>
+              <div class="back"><div class = "content"><p></p></div></div>
+            <!-- </div> -->
+          </div>
+
+        </section>
+
+        <section class="column_3"> <!--Column 3-->
+          <div class="title"><p>Methods for Both</p></div>
+
+          <!--each-->
+          <div class="card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <div class ="front_title"><p>Act on each element</p></div>
+              </div>
+              <div class="back">
+                <div class = "content">
+                  <p class="method_name">#each</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--values/ values_at-->
+          <div class="card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <div class ="front_title"><p>Use index to get values</p></div>
+              </div>
+              <div class="back">
+                <div class = "content">
+                  <p class="method_name">#values</p>
+                  <p class="method_name">#values_at()</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--include?-->
+          <div class="card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <div class ="front_title"><p>Conditional Method</p></div>
+              </div>
+              <div class="back">
+                <div class = "content">
+                  <p class="method_name">#include?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--select/collect/reject-->
+          <div class="card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front"><div class ="front_title"><p>Groups Based on a Filter Condition </p></div></div>
+              <div class="back">
+                <div class = "content">
+                  <p class="method_name">#select, #collect, #reject</p>
+                  <p>Note: collect is not a hash method.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--filler-->
+          <div class="card"> <!-- ontouchstart="this.classList.toggle('hover');" -->
+            <!-- <div class="flipper"> -->
+              <div class="front"><div class ="front_title"><p></p></div></div>
+              <div class="back"><div class = "content"><p></p></div></div>
+            <!-- </div> -->
+          </div>
+        </section>
+
+        <section class="column_4"> <!--Column 4-->
+          <div class="title"><p>Nested Data Structures</p></div>
+
+          <!--Nested Literal-->
+          <div class="card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front"><div class ="front_title"><p>Access Literally</p></div></div>
+              <div class="back">
+                <div class = "content">
+                  <p><span>Array Example:</span></p>
+                  <code>array[1][1][2][0]</code>
+                  <p>(Index position in square brackets)</p>
+                  <p>vs.</p>
+                  <p class="inline_code"><span>Hash Example:</span></p>
+                  <code> hash[:outer][:inner]["almost"][3]</code>
+                  <p>(key or value in square brackets)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Nested Loop-->
+          <div class="card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <div class ="front_title"><p>Access by Looping</p></div>
+              </div>
+              <div class="back">
+                <div class = "content">
+                  <p class ="method_name">#each</p>
+                  <p>For a multi-dimensional array:</p>
+                  <code>
+                  array.each do |element|<br>
+                      <span>element.each {|sub_element|</span><br>
+                        <span class="double">#codeblock</span><br>
+                      <span>}</span><br>
+                  end
+                  </code>
+                  <!-- <p>OR</p>
+                  <code>
+                  array.each_with_index do |element, index|<br>
+                      element.each_with_index do |sub_element, sub_array|<br>
+                      #code block<br>
+                  end
+                  </code> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--filler-->
+          <div class="card"> <!-- ontouchstart="this.classList.toggle('hover');" -->
+            <!-- <div class="flipper"> -->
+              <div class="front"><div class ="front_title"><p></p></div></div>
+              <div class="back"><div class = "content"><p></p></div></div>
+            <!-- </div> -->
+          </div>
+
+          <!--filler-->
+          <div class="card"> <!-- ontouchstart="this.classList.toggle('hover');" -->
+            <!-- <div class="flipper"> -->
+              <div class="front"><div class ="front_title"><p></p></div></div>
+              <div class="back"><div class = "content"><p></p></div></div>
+            <!-- </div> -->
+          </div>
+
+          <!--filler-->
+          <div class="card"> <!-- ontouchstart="this.classList.toggle('hover');" -->
+            <!-- <div class="flipper"> -->
+              <div class="front"><div class ="front_title"><p></p></div></div>
+              <div class="back"><div class = "content"><p></p></div></div>
+            <!-- </div> -->
+          </div>
+        </section>
+
+        <section class="column_5"> <!--Column 5-->
+          <div class="title"><p>Looping in JavaScript</p></div>
+
+          <!--'for' loop-->
+          <div class="card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <div class ="front_title"><p>Looping Through Everything in an Object</p></div>
+              </div>
+              <div class="back">
+                <div class = "content">
+                  <p class="method_name">for...in</p>
+                  <p class="method_name">for...of</p>
+                  <p class="method_name">for var..; range; increment</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--'while' loop-->
+          <div class="card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <div class ="front_title"><p>Looping through Conditionally</p></div>
+              </div>
+              <div class="back">
+                <div class = "content">
+                  <p class="method_name">while</p>
+                  <p class="method_name">do...while</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--filler-->
+          <div class="card"> <!-- ontouchstart="this.classList.toggle('hover');" -->
+            <!-- <div class="flipper"> -->
+              <div class="front"><p></p></div>
+              <div class="back"><div class = "content"><p></p></div></div>
+            <!-- </div> -->
+          </div>
+          <!--filler-->
+          <div class="card"> <!-- ontouchstart="this.classList.toggle('hover');" -->
+            <!-- <div class="flipper"> -->
+              <div class="front"><p></p></div>
+              <div class="back"><div class = "content"><p></p></div></div>
+            <!-- </div> -->
+          </div>
+          <!--filler-->
+          <div class="card"> <!-- ontouchstart="this.classList.toggle('hover');" -->
+            <!-- <div class="flipper"> -->
+              <div class="front"><p></p></div>
+              <div class="back"><div class = "content"><p></p></div></div>
+            <!-- </div> -->
+          </div>
+        </section>
+        <footer> Made by <a href="https://github.com/jeder28">Heather Lorenzo</a> &amp; <a href="https://github.com/aklap">Alexis La Porte</a> | DBC - NYC - 2015 | Copyright &copy; 2015. All rights reserved.</footer>
+      </main>
+   </body>
+</html>
+
