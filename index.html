@@ -8,28 +8,31 @@
     <!-- Load jQuery -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <!-- Load ScrollTo -->
-    <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+    <script type="text/javascript" src="/js/jquery.scrollTo-1.4.2-min.js"></script>
     <!-- Load LocalScroll -->
-    <script type="text/javascript" src="js/jquery_localscroll.min.js"></script>
+    <script type="text/javascript" src="/js/jquery_localscroll.min.js"></script>
     <!-- javascript that will initiate jQuery and the LocalScroll plugin -->
-    <script type="text/javascript" src="js/localscroll.js"></script>
+    <script type="text/javascript" src="/js/localscroll.js"></script>
   </head>
 
   <body id="page-top">
-    <nav id="navbar">
+    <nav id="navbar" class="navbar">
       <a class="brand-name titles" href="#page-top">Heather Lorenzo</a>
       <ul>
-        <li class="page-scroll">
+        <li>
           <a class="hidden" href="#page-top"></a>
         </li>
-        <li class="page-scroll">
+        <li>
           <a class="nav-link titles" href="#projects">Projects</a>
+          <div class="highlight-bar"></div>
         </li>
-        <li class="page-scroll">
+        <li>
           <a class="nav-link titles" href="#about">About</a>
+          <div class="highlight-bar"></div>
         </li>
-        <li class="page-scroll">
+        <li>
           <a class="nav-link titles" href="#contact">Contact</a>
+          <div class="highlight-bar"></div>
         </li>
       </ul>
     </nav>
@@ -42,14 +45,14 @@
       </div>
     </header>
 
-    <section id="projects">
+    <section id="projects" class="projects">
       <h2 class="projects-title titles">Projects</h2>
     </section>
 
-    <section id="about">
+    <section id="about" class="about">
       <h2 class="titles">About</h2>
     </section>
-    <section id="contact">
+    <section id="contact" class="contact">
       <h2 class="titles">Contact</h2>
     </section>
     <footer>
@@ -57,4 +60,5 @@
     </footer>
 
   </body>
+  <script type="text/javascript" src="/js/nav_menu_highlighting.js"></script>
 </html>
