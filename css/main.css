@@ -3,9 +3,23 @@
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-body {
+html body {
   position: relative;
   height: 100%;
+}
+
+body {
+  display: block;
+}
+
+.content {
+  padding-bottom: 90px;
+
+}
+
+.main-content {
+  margin-bottom: 90px;
+  clear: both;
 }
 
 .navbar {
@@ -24,11 +38,14 @@ body {
 
 .about {
   color: #fff;
-  background: #81745E
+  background: #009E95;
+  line-height: 1.5em;
 }
 
+
 .contact {
-  background: #009E95;
+  color: #423E39;
+  background: #fff;
 }
 
 header {
@@ -44,12 +61,34 @@ header img {
 
 section {
   width: 100%;
-  height: 600px;
+  /*height: 600px;*/
   color: #fff;
 }
 
-section h2 {
-  padding: 90px 0;
+/*section h2 {
+  padding: 90px 0 30px 0;
+}*/
+
+section h3 {
+  font-size: 1.25em;
+  padding-bottom: 30px;
+}
+
+.button {
+  border: 3px solid #423E39;
+  border-radius: 5px;
+  font-size: 1.25em;
+  background-color: white;
+  text-decoration: none;
+  color: #423E39;
+  padding: 15px;
+}
+
+.divider {
+  margin: 0 auto;
+  width: 80%;
+  height: 3px;
+  background-color: #423E39;
 }
 
 footer {
@@ -96,10 +135,49 @@ footer p {
 
 h2[class~="titles"] {
   text-align: center;
+  padding: 90px 0 30px 0;
 }
 
-.projects-title {
+.portfolio-img {
+  width: 30%;
+}
+
+.gray-title {
   color: #423E39;
+}
+
+.column-1 {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+
+.column-3 {
+  text-align: center;
+  float: left;
+  width: 33%;
+}
+
+.column-4 {
+  float: left;
+  width: 33%;
+}
+
+.centered-section {
+  padding: 60px 0;
+  margin: 0 auto;
+}
+
+.push {
+  height: 90px;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -90px;
 }
 
 /** Hover Effects **/
@@ -163,6 +241,17 @@ nav li {
   .nav-link {
     padding: 1.5em;
   }
+
+  .column-3 {
+    text-align: center;
+    float: left;
+    width: 33%;
+  }
+
+  .soc-media-icons {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 /** Med **/
@@ -174,6 +263,12 @@ nav li {
   .navbar-toggle {
     display: none;
   }
+
+  .soc-media-icons {
+    width: 75px;
+    height: 75px;
+  }
+
 }
 
 /** Narrow **/
@@ -249,5 +344,12 @@ nav li {
 
   nav ul.in-use {
     display: none;
+  }
+
+  .column-3 {
+    text-align: center;
+    float: left;
+    width: 100%;
+    padding-bottom: 60px;
   }
 }
