@@ -5,10 +5,10 @@ var header_height       = $('header').height() - 120,
 
 function pageSlide() {
 
-  var scroll_top = $(window).scrollTop();
-  var projects_height     = $('.projects').height(),
+  var scroll_top        = $(window).scrollTop(),
+      projects_height   = $('.projects').height(),
       about_position    = projects_height + header_height - 120,
-      about_height        = $('.about').height(),
+      about_height      = $('.about').height(),
       contact_position  = about_height + projects_height + header_height - 150
 
   if (scroll_top >= header_height && scroll_top < about_position) {
