@@ -1,14 +1,16 @@
-var header_height      = $('header').height() - 120,
-    projects_height    = $('.projects').height(),
-    about_position     = projects_height + header_height - 120,
-    about_height       = $('.about').height(),
-    contact_position   = about_height + projects_height + header_height - 120,
-    projects_link      = $("nav li")[0],
-    about_link         = $("nav li")[1],
-    contact_link       = $("nav li")[2]
+var header_height       = $('header').height() - 120,
+    projects_link       = $("nav li")[0],
+    about_link          = $("nav li")[1],
+    contact_link        = $("nav li")[2]
 
 function pageSlide() {
+
   var scroll_top = $(window).scrollTop();
+  var projects_height     = $('.projects').height(),
+      about_position    = projects_height + header_height - 120,
+      about_height        = $('.about').height(),
+      contact_position  = about_height + projects_height + header_height - 150
+
   if (scroll_top >= header_height && scroll_top < about_position) {
     $("nav li").removeClass('active');
     $(projects_link).addClass('active');
@@ -24,6 +26,7 @@ function pageSlide() {
   else {
     $("nav li").removeClass('active');
   }
+
 }
 
 var debounce = function(func, wait, immediate) {
