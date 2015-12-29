@@ -139,7 +139,12 @@ h2[class~="titles"] {
 }
 
 .portfolio-img {
-  width: 30%;
+  display: block;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.portfolio-link {
 }
 
 .gray-title {
@@ -160,12 +165,20 @@ h2[class~="titles"] {
 
 .column-4 {
   float: left;
-  width: 33%;
+  width: 25%;
 }
 
 .centered-section {
   padding: 60px 0;
   margin: 0 auto;
+  width: 80%;
+  height: 90px;
+  padding-bottom: 30px;
+}
+
+.buffer {
+  display: block;
+  height: 30px;
 }
 
 .push {
