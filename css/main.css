@@ -1,6 +1,8 @@
 * {
   margin: 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'NowRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 
 html body {
@@ -116,11 +118,13 @@ footer p {
   color: white;
   text-decoration: none;
   padding: 30px 0 0 10%;
+  font-family: 'NowBold', Helvetica, sans-serif;
 }
 
 .name {
   display: block;
   font-size: 2em;
+  font-family: 'NowBold', Helvetica, sans-serif;
 }
 
 .skills {
@@ -129,6 +133,7 @@ footer p {
 }
 
 h2[class~="titles"] {
+  font-family: 'NowBold', Helvetica, sans-serif;
   text-align: center;
   padding: 90px 0 30px 0;
 }
