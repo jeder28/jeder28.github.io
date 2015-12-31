@@ -3,10 +3,12 @@
   <head>
     <!--Stylsheets-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <!--Fonts-->
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/now" type="text/css"/>
-    <!-- Load jQuery -->
+    <!-- Load jQuery Libraries -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <!-- Load ScrollTo -->
     <script type="text/javascript" src="/js/jquery.scrollTo-1.4.2-min.js"></script>
     <!-- Load LocalScroll -->
@@ -59,36 +61,37 @@
                 <div class="divider"></div>
               </div>
             </div>
-            <div class="row">
+            <div class="row bottom-row">
               <div class="column-2">
-                <a href="#" class="portfolio-link">
+                <a href="#project-1" class="portfolio-link">
                   <img src="imgs/theresboard-01.png" class="portfolio-img" alt="">
                 </a>
               </div>
               <div class="column-2">
-                <a href="#" class="portfolio-link">
+                <a href="#project-2" class="portfolio-link">
                   <img src="imgs/stackoverphil.png" class="portfolio-img" alt="">
                 </a>
               </div>
               <div class="column-2">
-                <a href="#portfolioModal1" class="portfolio-link">
+                <a href="#project-3" class="portfolio-link">
                   <img src="imgs/cheatsheet-01.png" class="portfolio-img" alt="">
                 </a>
               </div>
               <div class="column-2">
-                <a href="#portfolioModal1" class="portfolio-link">
+                <a href="#project-4" class="portfolio-link">
                   <img src="imgs/wedding-design.png" class="portfolio-img" alt="">
                 </a>
               </div>
             </div>
-          </div>
         </section>
 
         <section id="about" class="about">
           <div class="grid-container">
-            <div class="row">
+            <div class="row bottom-row">
               <div class="column-3">
                 <img class="profile-pic" src="/imgs/Hprofilepic.jpg">
+                <a href="/download/HeatherLorenzo_Resume.pdf" download="HeatherLorenzo_Resume.pdf" id="resume-btn" class="button button-resume"><img src="/imgs/file-pdf-white.png">  | Download Résumé
+                </a>
               </div>
               <div class="column-5">
                 <h2 class="titles about-title">About</h2>
@@ -111,7 +114,8 @@
             <div class="row">
               <div class="column-3">
                 <h3 class='titles'>Email</h3>
-                <a class="button" href="#">Write Me</a>
+                <br>
+                <a class="button" href="mailto:heather@heatherlorenzo.com">Write Me</a>
               </div>
               <div class="column-3">
                 <h3 class="titles">Social Media</h3>
@@ -137,6 +141,147 @@
     </footer>
 
   </body>
+<!-- Modals -->
+<div id="project-1" class="project-modal">
+  <div class="grid-container">
+    <a href="#close" title="close" class="close">X</a>
+    <div class="row">
+      <div class="column-8">
+        <h3 class="gray-title titles">There's A Board</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column-8">
+        <p class="centered-text">Date: <span class="bold">Oct 2015</span> Roles: <span class="bold">Front-End, Back-End</span></p>
+      </div>
+    </div>
+
+    <div class="row bottom-row">
+      <div class="column-3 modal">
+        <div class="description">
+          <p>There's a board is an internal app designed to encourage and aid Dev Bootcamp students to tutor by scheduling their time, providing goals to tutor a number of times and promote friendly competition between students on the number of times they tutored.</p>
+          <br>
+          <ul>
+            <li>Front-End: Custom Javascript</li>
+            <li>Back-end: Rails, Rails Api</li>
+            <li>Plugins: jQuery fullCalendar</li>
+            <li>Templates: Bootstrap</li>
+            <li>Deployed: Heroku</li>
+          </ul>
+           <a class="button button-green" target="_blank" href="https://vimeo.com/145595148">Demo Project</a>
+        </div>
+      </div>
+      <div class="column-5 modal">
+        <img class="slideshow" src="/imgs/thereboard-screenshot-1.png">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Modal 1 -->
+
+<!-- Modal 2 -->
+<div id="project-2" class="project-modal">
+  <div class="grid-container">
+    <a href="#close" title="close" class="close">X</a>
+    <div class="row">
+      <div class="column-8">
+        <h3 class="gray-title titles">Stack Overphil</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column-8">
+        <p class="centered-text">
+          Date: <span class="bold">Oct 2015</span> Roles: <span class="bold">Built Custom CSS for Front End, Back-End</span></p>
+      </div>
+    </div>
+
+    <div class="row bottom-row">
+      <div class="column-3 modal">
+        <div class="description">
+          <p>A mini-version of Stack Overflow that allows our users to ask and answer questions, decide which answer to their questions are best and vote on any questions, answers or comments. This data is sortable by popularity, recently posted or tags.</p>
+          <br>
+          <ul>
+            <li><span class="bold">Front-End:</span> All custom CSS</li>
+            <li><span class="bold">Back-end:</span> Rails</li>
+            <li><span class="bold">Technique:</span> Fast sorting with AJAX</li>
+          </ul>
+          <a class="button button-green" target="_blank" href="https://stack-overphil.herokuapp.com/">Go To Site</a>
+        </div>
+      </div>
+      <div class="column-5 modal">
+        <img class="slideshow" src="/imgs/stackphil-screenshot-1.png">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Modal 2 -->
+
+<!-- Modal 3 -->
+<div id="project-3" class="project-modal">
+  <div class="grid-container">
+    <a href="#close" title="close" class="close">X</a>
+    <div class="row">
+      <div class="column-8">
+        <h3 class="gray-title titles">Ruby/ Javascript Cheatsheet</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column-8">
+        <p class="centered-text">
+          Date: <span class="bold">Sept 2015</span> Roles: <span class="bold">Co-Collaborator on HTML and Custom CSS</span></p>
+      </div>
+    </div>
+
+    <div class="row bottom-row">
+      <div class="column-3 modal">
+        <div class="description">
+          <p>A quick exercise to create a cheatsheet covering Ruby iteration methods and compare their similarities and differences in Javascript. We created our own custom CSS, as well as utilized CSS Animations to create notecards of terms that flipped to reveal definitions.</p>
+          <a class="button button-green" target="_blank" href="/projects/cheatsheet.html">Go To Project</a>
+        </div>
+      </div>
+      <div class="column-5 modal">
+        <img class="slideshow" src="/imgs/cheatsheet-screenshot-1.png">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Modal 3 -->
+
+<!-- Modal 4 -->
+<div id="project-4" class="project-modal">
+  <div class="grid-container">
+    <a href="#close" title="close" class="close">X</a>
+    <div class="row">
+      <div class="column-8">
+        <h3 class="gray-title titles">Wedding Website Design</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column-8">
+        <p class="centered-text">
+          Date: <span class="bold">March 2015</span> Roles: <span class="bold">Illustrations &amp; Design</span></p>
+      </div>
+    </div>
+
+    <div class="row bottom-row">
+      <div class="column-3 modal">
+        <div class="description">
+          <p>A custom wedding website created by myself and my husband. I was responsible for the overal design and all illustrative content. For the design, we wanted to incorporate the location of the wedding, while also keeping it fun and playful.
+          <a class="button button-green" target="_blank" href="http://heatherdiegowedding.com">Go To Site</a>
+        </div>
+      </div>
+      <div class="column-5 modal">
+        <img class="slideshow" src="/imgs/wedding-screenshot-1.png">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Modal 4 -->
+
   <script type="text/javascript" src="/js/scrolltracking.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
