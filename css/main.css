@@ -519,6 +519,11 @@ nav li {
   .column-3 {
     width: 100%;
   }
+  .soc-media-icons {
+    width: 20%;
+    height: 20%;
+  }
+
 }
 
 .project-modal {
