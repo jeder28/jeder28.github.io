@@ -25,7 +25,8 @@ body {
   right: 0;
   height: 90px;
   background-color: rgba(4, 109, 101, 0.8);
-  width: 100%
+  width: 100%;
+  z-index: 1;
 }
 
 .projects {
@@ -80,6 +81,35 @@ section h3 {
   padding: 15px;
 }
 
+.button.button-green {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  background-color: #18bc9c;
+  border-color: #18bc9c;
+}
+
+.button.button-green:hover {
+  background-color: #139078;
+  border-color: #139078;
+}
+
+.button.button-resume {
+  color: #fff;
+  background-color:#009E95;
+  border-color: #fff;
+}
+
+.button.button-resume:hover {
+  background-color:#03766E;
+}
+
+.button-resume img {
+  margin-bottom: -8px;
+  padding-top: 30px;
+}
+
 .divider {
   margin: 0 auto;
   width: 100%;
@@ -132,10 +162,17 @@ footer p {
   font-weight: 300;
 }
 
-h2[class~="titles"] {
+h2[class~="titles"], h3[class~="titles"] {
   font-family: 'NowBold', Helvetica, sans-serif;
   text-align: center;
+}
+
+h2[class~="titles"] {
   padding: 90px 0 30px 0;
+}
+
+h3[class~="titles"] {
+  padding: 30px 0 15px 0;
 }
 
 .portfolio-img {
@@ -168,7 +205,6 @@ h2[class~="titles"] {
   width:85%;
   max-width: 1200px;
   margin: 0 auto;
-  padding-bottom: 90px;
 }
 
 .row:before,
@@ -295,6 +331,19 @@ nav li {
     display: none;
   }
 
+  .description {
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.25em;
+    width: 100%;
+    margin: 0 0 0 15%;
+  }
+
+  .slideshow {
+    width: 90%;
+    margin: 0 0 0 10%;
+  }
+
   .nav-link {
     padding: 1.5em;
   }
@@ -318,8 +367,14 @@ nav li {
   .column-4 { width: 50%; }
   .column-6 { width: 100%;}
 
-   .row .column-3:last-type-of {
+  .column-5.modal, .column-3.modal { width: 100%; }
+
+  .row .column-3:last-type-of {
       width: 100%;
+   }
+
+   .button-resume {
+    font-size: .8em;
    }
 
   .nav-link {
@@ -335,6 +390,17 @@ nav li {
     height: 20%;
   }
 
+  .description {
+    text-align: left;
+    margin: 0 auto;
+    font-size: 1em;
+  }
+
+  .slideshow {
+    margin: 0 auto;
+    width: 100%;
+  }
+
 }
 
 /** Narrow **/
@@ -344,6 +410,14 @@ nav li {
 
   h2.about-title {
     padding: 0px 0 30px 0;
+  }
+
+  .button-resume {
+    font-size: 1em;
+   }
+
+  .description {
+    font-size: .75em;
   }
 
   .profile-pic {
@@ -435,6 +509,7 @@ nav li {
     width: 15%;
     height: 15%;
   }
+
 }
 
 @media (max-width: 450px) {
@@ -444,7 +519,68 @@ nav li {
   .column-3 {
     width: 100%;
   }
+}
 
+.project-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index:9999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  overflow: auto;
+}
 
+.project-modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
 
+.project-modal > div {
+  width: 90%;
+  position: relative;
+  margin: 5% auto;
+  padding: 5px 20px 5px 20px;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.project-modal > div ul {
+  padding-left: 15px;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  font-family: "NowBold", Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: gray;
+  border: 1px solid white;
+}
+
+.close:hover {
+  border: 1px solid #f2f2f2;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.bold {
+  font-family: 'NowBold';
+  font-weight: bold;
+}
+
+.bottom-row {
+  padding-bottom: 60px;
 }
