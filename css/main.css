@@ -342,3 +342,8 @@ h3[class~="titles"] {
 .bottom-row {
   padding-bottom: 60px;
 }
+
+.modal-img {
+  box-shadow: 0 1px 5px 0 #D8D8D8;
+  border: 1px solid #D8D8D8;
+}
