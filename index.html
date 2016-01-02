@@ -1,442 +1,301 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Heather Lorenzo</title>
+    <!--Stylsheets-->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="/css/mediaqueries.css">
+    <!--Fonts-->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/now" type="text/css"/>
+    <!-- Load jQuery Libraries -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!-- Load ScrollTo -->
+    <script type="text/javascript" src="/js/jquery.scrollTo-1.4.2-min.js"></script>
+    <!-- Load LocalScroll -->
+    <script type="text/javascript" src="/js/jquery_localscroll.min.js"></script>
+    <!-- javascript that will initiate jQuery and the LocalScroll plugin -->
+    <script type="text/javascript" src="/js/scrolling.js"></script>
 
-    <link rel="shortcut icon" href="/imgs/favicon.ico"/>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Freelancer - Start Bootstrap Theme</title>
-
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
-    <link href="css/half-slider.css" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+    <script type="text/javascript" src="/js/hamburgermenu.js"></script>
   </head>
-  <body id="page-top" class="index">
-    <!-- <div class="wrapper"> -->
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">Heather Lorenzo</a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Projects</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-      </nav>
+  <body id="page-top">
+    <div class="wrapper">
+    <nav id="navbar" class="navbar">
+      <a class="brand-name titles" href="#page-top">Heather Lorenzo</a>
 
+      <ul class="in-use">
+        <li>
+          <a class="nav-link titles" href="#projects">Projects</a>
+          <div class="highlight-bar"></div>
+        </li>
+        <li>
+          <a class="nav-link titles" href="#about">About</a>
+          <div class="highlight-bar"></div>
+        </li>
+        <li>
+          <a class="nav-link titles" href="#contact">Contact</a>
+          <div class="highlight-bar"></div>
+        </li>
+      </ul>
+
+      <a class="navbar-toggle" href="#"><p>&#9776;</p></a>
+    </nav>
+
+    <div class="content">
       <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="/imgs/heatherillustration-01.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Heather Lorenzo</span>
-                        <span class="skills">Full Stack Web Developer</span>
-                    </div>
-                </div>
-            </div>
+        <img class="img-responsive" src="/imgs/heatherillustration-01.png" alt="">
+        <div class="intro-text">
+            <span class="name titles">Heather Lorenzo</span>
+            <span class="skills">Full Stack Web Developer</span>
         </div>
       </header>
-          <!-- Portfolio Grid Section -->
-      <section id="portfolio">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <h2>Projects</h2>
+      <div class="main-content">
+        <section id="projects" class="projects">
+          <div class="grid-container">
+            <div class="row">
+              <h2 class="column-8 gray-title titles">Projects</h2>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 portfolio-item">
-              <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                <div class="caption">
-                  <div class="caption-content">
-                    <i class="fa fa-search-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img src="imgs/theresboard-01.png" class="img-responsive" alt="">
-              </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-              <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                <div class="caption">
-                  <div class="caption-content">
-                    <i class="fa fa-search-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img src="imgs/stackoverphil.png" class="img-responsive" alt="">
-              </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-              <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                <div class="caption">
-                  <div class="caption-content">
-                    <i class="fa fa-search-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img src="imgs/cheatsheet-01.png" class="img-responsive" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- About Section -->
-      <section class="success" id="about">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>About</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <p>I am a web developer with a passion for good design. I love making web applications with the user always in mind. For me, UX is like storytelling, beginning with easy to use functionality, enhancing that experience through its visual design, then growing into an app with use and purpose.</p>
-            </div>
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="/download/HeatherLorenzo_Resume.pdf" download="HeatherLorenzo_Resume.pdf" id="resume-btn" class="btn btn-lg btn-success">
-                    <i class="fa fa-download"></i> Download Résumé
-                </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    <!-- </div> -->
-    <footer id="contact" class="text-center">
-        <div class="footer-above">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12 text-center">
-                  <h1>Contact</h1>
-                  <hr class="divider">
-                </div>
+            <div class="row">
+              <div class="column-8">
+                <div class="divider"></div>
               </div>
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>EMAIL</h3>
-                        <a id="email-btn" class="btn btn-outline" href="mailto:heather@heatherlorenzo.com">Write Me</a>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Social media</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.linkedin.com/pub/heather-drain/21/a38/b57" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/jeder28" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-github"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/Jeder28" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://plus.google.com/u/0/+HeatherLorenzo-Drain" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Queens, NY</p>
-                    </div>
-                </div>
             </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Heather Lorenzo 2015
-                    </div>
-                </div>
+            <div class="row bottom-row">
+              <div class="column-2">
+                <a href="#project-1" class="portfolio-link">
+                  <img src="imgs/theresboard-01.png" class="portfolio-img" alt="">
+                </a>
+              </div>
+              <div class="column-2">
+                <a href="#project-2" class="portfolio-link">
+                  <img src="imgs/stackoverphil.png" class="portfolio-img" alt="">
+                </a>
+              </div>
+              <div class="column-2">
+                <a href="#project-3" class="portfolio-link">
+                  <img src="imgs/cheatsheet-01.png" class="portfolio-img" alt="">
+                </a>
+              </div>
+              <div class="column-2">
+                <a href="#project-4" class="portfolio-link">
+                  <img src="imgs/wedding-design.png" class="portfolio-img" alt="">
+                </a>
+              </div>
             </div>
+        </section>
+
+        <section id="about" class="about">
+          <div class="grid-container">
+            <div class="row bottom-row">
+              <div class="column-3">
+                <img class="profile-pic" src="/imgs/Hprofilepic.jpg">
+                <a href="/download/HeatherLorenzo_Resume.pdf" download="HeatherLorenzo_Resume.pdf" id="resume-btn" class="button button-resume"><img src="/imgs/file-pdf-white.png">  | Download Résumé
+                </a>
+              </div>
+              <div class="column-5">
+                <h2 class="titles about-title">About</h2>
+                <p class="about-text">I’ve always been an artsy person with a passion for technology. So as a web develper, good design is very important to me. I love making web applications with the user always in mind. For me, UX is like storytelling, beginning with easy to use functionality, enhancing that experience through its visual design, then growing into an app with use and purpose. Other facts about me include my love of cooking and baking, especially chicken pot pie. I also love DIY projects, such as laying new tile in my kitchen, and more crafty projects, like creating the reception decorations for my wedding this past June or crocheting scarves and blankets.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="contact">
+          <div class="grid-container">
+            <div class="row">
+              <h2 class="column-8 gray-title titles">Contact</h2>
+            </div>
+            <div class="row">
+              <div class="column-8">
+                <div class="divider"></div>
+              </div>
+            </div>
+            <div class="row bottom-row">
+              <div class="column-3">
+                <h3 class='titles'>Email</h3>
+                <br>
+                <a class="button" href="mailto:heather@heatherlorenzo.com">Write Me</a>
+              </div>
+              <div class="column-3">
+                <h3 class="titles">Social Media</h3>
+                <a href="https://twitter.com/Jeder28"><img class="soc-media-icons" src="/imgs/twitter.png"></a>
+                <a href="https://github.com/jeder28"><img class="soc-media-icons" src="/imgs/github.png"></a>
+                <a href="https://www.linkedin.com/in/heatherdrainlorenzo"><img class="soc-media-icons" src="/imgs/linkedin.png"></a>
+                <a href="https://www.instagram.com/jeder28/"><img class="soc-media-icons" src="/imgs/instagram.png"></a>
+              </div>
+              <div class="column-3">
+                <h3 class='titles'>Location</h3>
+                <p>Queens, NY</p>
+              </div>
+            </div>
+          </div>
+        </section>
         </div>
+      </div>
+    </div>
+      <div class="push"></div>
+    </div>
+    <footer>
+      <p>Copyright &copy; Heather Lorenzo 2015</p>
     </footer>
 
   </body>
+<!-- Modals -->
+<div id="project-1" class="project-modal">
+  <div class="grid-container">
+    <a href="#close" title="close" class="close">X</a>
+    <div class="row">
+      <div class="column-8">
+        <h3 class="gray-title titles">There's A Board</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column-8">
+        <p class="centered-text">Date: <span class="bold">Oct 2015</span> Roles: <span class="bold">Front-End, Back-End</span></p>
+      </div>
+    </div>
+
+    <div class="row bottom-row">
+      <div class="column-3 modal">
+        <div class="description">
+          <p>There's a board is an internal app designed to encourage and aid Dev Bootcamp students to tutor by scheduling their time, providing goals to tutor a number of times and promote friendly competition between students on the number of times they tutored.</p>
+          <br>
+          <ul>
+            <li>Front-End: Custom Javascript</li>
+            <li>Back-end: Rails, Rails Api</li>
+            <li>Plugins: jQuery fullCalendar</li>
+            <li>Templates: Bootstrap</li>
+            <li>Deployed: Heroku</li>
+          </ul>
+          <br>
+           <a class="button button-green" target="_blank" href="https://vimeo.com/145595148">Demo Project</a>
+        </div>
+      </div>
+      <div class="column-5 modal">
+        <img class="modal-img" src="/imgs/thereboard-screenshot-1.png">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Modal 1 -->
+
+<!-- Modal 2 -->
+<div id="project-2" class="project-modal">
+  <div class="grid-container">
+    <a href="#close" title="close" class="close">X</a>
+    <div class="row">
+      <div class="column-8">
+        <h3 class="gray-title titles">Stack Overphil</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column-8">
+        <p class="centered-text">
+          Date: <span class="bold">Oct 2015</span> Roles: <span class="bold">Built Custom CSS for Front End, Back-End</span></p>
+      </div>
+    </div>
+
+    <div class="row bottom-row">
+      <div class="column-3 modal">
+        <div class="description">
+          <p>A mini-version of Stack Overflow that allows our users to ask and answer questions, decide which answer to their questions are best and vote on any questions, answers or comments. This data is sortable by popularity, recently posted or tags.</p>
+          <br>
+          <ul>
+            <li><span class="bold">Front-End:</span> All custom CSS</li>
+            <li><span class="bold">Back-end:</span> Rails</li>
+            <li><span class="bold">Technique:</span> Fast sorting with AJAX</li>
+          </ul>
+          <br>
+          <a class="button button-green" target="_blank" href="https://stack-overphil.herokuapp.com/">Go To Site</a>
+        </div>
+      </div>
+      <div class="column-5 modal">
+        <img class="modal-img" src="/imgs/stackphil-screenshot-1.png">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Modal 2 -->
+
+<!-- Modal 3 -->
+<div id="project-3" class="project-modal">
+  <div class="grid-container">
+    <a href="#close" title="close" class="close">X</a>
+    <div class="row">
+      <div class="column-8">
+        <h3 class="gray-title titles">Ruby/ Javascript Cheatsheet</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column-8">
+        <p class="centered-text">
+          Date: <span class="bold">Sept 2015</span> Roles: <span class="bold">Co-Collaborator on HTML and Custom CSS</span></p>
+      </div>
+    </div>
+
+    <div class="row bottom-row">
+      <div class="column-3 modal">
+        <div class="description">
+          <p>A quick exercise to create a cheatsheet covering Ruby iteration methods and compare their similarities and differences in Javascript. We created our own custom CSS, as well as utilized CSS Animations to create notecards of terms that flipped to reveal definitions.</p>
+        <a class="button button-green" href="/projects/cheatsheet.html">Go To Project</a>
+        </div>
+      </div>
+      <div class="column-5 modal">
+        <img class="modal-img" src="/imgs/cheatsheet-screenshot-1.png">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Modal 3 -->
+
+<!-- Modal 4 -->
+<div id="project-4" class="project-modal">
+  <div class="grid-container">
+    <a href="#close" title="close" class="close">X</a>
+    <div class="row">
+      <div class="column-8">
+        <h3 class="gray-title titles">Wedding Website Design</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column-8">
+        <p class="centered-text">
+          Date: <span class="bold">March 2015</span> Roles: <span class="bold">Illustrations &amp; Design</span></p>
+      </div>
+    </div>
+
+    <div class="row bottom-row">
+      <div class="column-3 modal">
+        <div class="description">
+          <p>A custom wedding website created by myself and my husband. I was responsible for the overal design and all illustrative content. For the visuals, we wanted to incorporate the location of the wedding, while also keeping it fun and playful.</p>
+          <br>
+          <a class="button button-green" target="_blank" href="http://heatherdiegowedding.com">Go To Site</a>
+        </div>
+      </div>
+      <div class="column-5 modal">
+        <img class="modal-img" src="/imgs/wedding-screenshot-1.png">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Modal 4 -->
+
+  <script type="text/javascript" src="/js/scrolltracking.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-71771248-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </html>
 
-<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl">
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div id="project-title" class="col-lg-8 col-lg-offset-2">
-              <div class="modal-body">
-                <h2>There's a board</h2>
-                <ul class="list-inline item-details">
-                  <li>Date: <strong>Oct 2015</strong></li>
-                  <li>Roles: <strong>Front-End, Back-End</strong></li>
-                </ul>
-              </div>
-            </div>
-            <!-- Info -->
-            <div class="col-md-5">
-              <div class="modal-body">
-                <p class="modal-details">There's a board is an internal app designed to encourage and aid Dev Bootcamp students to tutor by scheduling their time, providing goals to tutor a number of times and promote friendly competition between students on the number of times they tutored.</p>
-                <ul class="modal-details">
-                <li>Implemented the jQuery plugin fullCalendar to neatly display scheduling information to our users.</li>
-                <li>Built our own front-end using Javascript to allow users to interact with our site.</li>
-                <li>Built the back-end using Rails and the Rails API to create and update appointments.</li>
-                <li>Used Bootstrap theme for a clean and unified style througout the site.</li>
-                <li>Deployed using Heroku</li>
-                </ul>
-              </div>
-              <a class="btn btn-success"  href="https://vimeo.com/145595148" target="_blank">Demo Project</a>
-            </div>
-            <!-- End of Info -->
-            <!-- Carousel -->
-            <div class="col-md-5">
-              <div id="myCarousel" class="carousel slide">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <!-- Wrapper for Slides -->
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="/imgs/thereboard-screenshot-1.png">
-                  </div>
-                  <div class="item">
-                    <img src="/imgs/thereboard-screenshot-2.png">
-                  </div>
-                  <div class="item">
-                    <img src="/imgs/thereboard-screenshot-3.png">
-                  </div>
-                </div>
-                <!-- End of Wrapper for Slides -->
-                <!-- Controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                  <span class="icon-prev"></span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                  <span class="icon-next"></span>
-                </a>
-                 <!-- End of Controls -->
-              </div>
-            </div>
-            <!-- End of Carousel -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--End of Portfolio 1-->
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl">
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div id="project-title" class="col-lg-8 col-lg-offset-2">
-              <div class="modal-body">
-                <h2>Stack Overphil</h2>
-                <ul class="list-inline item-details">
-                  <li>Date: <strong>Oct 2015</strong></li>
-                  <li>Roles: <strong>Built Custom CSS for Front End, Back-End</strong></li>
-                </ul>
-              </div>
-            </div>
-            <!-- Info -->
-            <div class="col-md-5">
-              <div class="modal-body">
-                <p class="modal-details">Stack Overphil is a mini-version of Stack Overflow that allowed our users to ask questions, answer questions, decide which answer to their own question was the best and vote on any question, answer or comment. We were then able to then sort this information by popularity, recently posted or by tags.</p>
-                <ul class="modal-details">
-                  <li>Back-end was built using Rails, to create questions, answers and comments and their corresponding relationships.</li>
-                  <li>We implemented AJAX for quick filtering and searching for questions.</li>
-                  <li>I used plain CSS for the styling of the site</li>
-                </ul>
-                <a class="btn btn-success"  href="https://stack-overphil.herokuapp.com" target="_blank">Go To Project</a>
-              </div>
-            </div>
-            <!-- End of Info -->
-            <!-- Carousel -->
-            <div class="col-md-5">
-              <div id="myCarousel2" class="carousel slide">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel2" data-slide-to="1"></li>
-                <li data-target="#myCarousel2" data-slide-to="2"></li>
-                </ol>
-                <!-- Wrapper for Slides -->
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="/imgs/stackphil-screenshot-1.png">
-                  </div>
-                  <div class="item">
-                    <img src="/imgs/stackphil-screenshot-2.png">
-                  </div>
-                  <div class="item">
-                    <img src="/imgs/stackphil-screenshot-3.png">
-                  </div>
-                </div>
-                <!-- End of Wrapper for Slides -->
-                <!-- Controls -->
-                <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
-                  <span class="icon-prev"></span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel2" data-slide="next">
-                  <span class="icon-next"></span>
-                </a>
-                 <!-- End of Controls -->
-              </div>
-            </div>
-            <!-- End of Carousel -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End of Portfolio 2-->
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl">
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div id="project-title" class="col-lg-8 col-lg-offset-2">
-              <div class="modal-body">
-                <h2>Ruby Javascript Cheat Sheet</h2>
-                <ul class="list-inline item-details">
-                  <li>Date: <strong>Sept 2015</strong></li>
-                  <li>Roles: <strong>Co-Collaborator on HTML and Custom CSS</strong></li>
-                </ul>
-              </div>
-            </div>
-            <!-- Info -->
-            <div class="col-md-5">
-              <div class="modal-body">
-                <p class="modal-details">A quick exercise to create an  cheatsheet that covers Ruby iteration methods and their similarities/differences in Javascript. We created our own custom CSS, as well as utilized CSS Animations to create notecards of terms that flipped to reveal definitions.</p>
-                <a class="btn btn-success"  href="/projects/cheatsheet.html">Go To Project</a>
-              </div>
-            </div>
-            <!-- End of Info -->
-            <!-- Carousel -->
-            <div class="col-md-5">
-              <div id="myCarousel3" class="carousel slide">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel3" data-slide-to="1"></li>
-                <li data-target="#myCarousel3" data-slide-to="2"></li>
-                </ol>
-                <!-- Wrapper for Slides -->
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="/imgs/cheatsheet-screenshot-1.png">
-                  </div>
-                  <div class="item">
-                    <img src="/imgs/cheatsheet-screenshot-2.png">
-                  </div>
-                  <div class="item">
-                    <img src="/imgs/cheatsheet-screenshot-3.png">
-                  </div>
-                </div>
-                <!-- End of Wrapper for Slides -->
-                <!-- Controls -->
-                <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
-                  <span class="icon-prev"></span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel3" data-slide="next">
-                  <span class="icon-next"></span>
-                </a>
-                 <!-- End of Controls -->
-              </div>
-            </div>
-            <!-- End of Carousel -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End of Portfolio 3-->
-
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/cbpAnimatedHeader.js"></script>
-
-<!-- Contact Form JavaScript -->
-<script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="js/freelancer.js"></script>
-<script>
-  $('.carousel').carousel({
-      interval: 5000 //changes the speed
-  })
-</script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-71771248-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
